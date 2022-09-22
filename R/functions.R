@@ -1,35 +1,33 @@
 
 # Here below put your main project's functions ---------------------
-
-
-#' Null function
+#' Import data
 #'
-#' Use this as template for your first function, and delete it!
+#' Function to import the data
+#' @param .data_path (chr) path to the raw data to import
 #'
-#' @note You can add all this documentation infrastructure pressing
-#'   `CTRL + SHIFT + ALT + R` from anywhere inside the function's body.
-#'
-#' @param x (default, NULL)
-#'
-#' @return NULL
-#'
-#' @examples
-#' \dontrun{
-#'   null()
-#'   null(1)
-#' }
-null <- function(x = NULL) {
-  if (!is.null(x)) NULL else x
-}
-
-
+#' @return a tibble
 import_data <- function(.data_path) {
   file.path(.data_path) |>
     normalizePath() |>
-    readr::read_csv()
+    readr::read_csv(show_col_types = FALSE)
 }
 
 
+preprocess <- function(db) {
+  tibble::as_tibble(db)
+}
+
+#' Do what matters
+#'
+#'Do relevant computation only (but...test them!)
+#'
+#' @param db (data.frame) data source for the relevant computation
+#'
+#' @return (num) our super amazing result
+#' @export
+#'
+#' @examples
+#' relevant_computation(mtcars)
 relevant_computation <- function(db) {
   2 * length(db) + 1
 }

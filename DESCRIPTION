@@ -1,10 +1,10 @@
-Package: laims.analysis
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: cicciopasticcio
+Title: Pasticci a gogo
+Version: 1.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Corrado", "Lanera", , "corrado.lanera@ubep.unipd.it", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0520-7428"))
+Description: Progetto test per uso laims.analysis template in cui fare un sacco di pasticci (a gogo, appunto).
 License: file LICENSE
 Imports: 
     fs,

@@ -3,9 +3,9 @@ PATH="${RTOOLS40_HOME}\usr\bin;${PATH}"
 # Project's information: ONE SINGLE LINE EACH (no line brakes!!)
 PROJ_TITLE="Project's Title"
 PROJ_DESCRIPTION="Project's description."
-PROJ_URL="https://github.com/UBESP-DCTV/laims.analysis"
+PROJ_URL="https://github.com/UBESP-DCTV/cicciopasticcio"
 
 # Shared folders local locations
-PRJ_SHARED_PATH=""
+PRJ_SHARED_PATH="C:/Users/corrado.lanera/Documents/ciccio_self_shared"
 INPUT_DATA_FOLDER="data-raw"
 OUTPUT_DATA_FOLDER="output"

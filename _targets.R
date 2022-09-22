@@ -25,7 +25,7 @@ list(
   # Import your file from custom (shared) location, and preprocess them
   tar_target(
     db_raw_path,
-    file.path(get_input_data_path("db_raw.csv")),
+    file.path(get_input_data_path("farlocco.csv")),
     format = "file"
   ),
 
@@ -35,7 +35,6 @@ list(
 
 
   # Call your custom functions as needed.
-  tar_target(irrelevantResult, null(1), format = "qs"),
   tar_target(relevantResult, relevant_computation(db), format = "qs"),
 
   # compile yor report
